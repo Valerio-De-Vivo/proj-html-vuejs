@@ -1,8 +1,9 @@
+/*! GENERAL  */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
   font-family: "Roboto", sans-serif;
 }
 
@@ -12,3 +13,74 @@ h3 {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
 }
+
+.btn {
+  padding: 18px 45px;
+  background-color: transparent;
+  background-image: linear-gradient(269deg, #02d9a5 0%, #91e062 100%);
+  box-shadow: 6px 6px 25px 0 rgba(0, 217, 166, 0.35);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+  border-radius: 100em;
+}
+
+/*! HEADER  */
+
+.top-header {
+  height: 30px;
+  background-color: #3b3b3b;
+  color: white;
+  display: flex;
+  font-size: 80%;
+}
+
+.container-header {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone i {
+  margin-right: 5px;
+}
+
+.top-header a {
+  color: white;
+  padding: 0 5px;
+}
+
+.main-header {
+  height: 100px;
+}
+
+.main-header nav ul {
+  display: flex;
+}
+
+.main-header nav li {
+  list-style: none;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+.main-header nav a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+.cta a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin-right: 30px;
+}
+
+.cta i {
+  color: #02d9a5;
+}
+
+/*! BODY  */
+
+/*! FOOTER  */
