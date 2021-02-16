@@ -211,22 +211,28 @@ span {
 
 /*! BODY  */
 
-.second {
-  height: 120vh;
+.second,
+.third,
+.four {
+  min-height: 110vh;
   display: flex;
   align-items: center;
 }
+
+/*.. 2  */
 
 .second .text {
   width: 40%;
   padding: 40px;
 }
 
-.second .text h2 {
+.second .text h2,
+.third-text h2 {
   font-size: 4em;
 }
 
-.second .text a {
+.second .text a,
+.third-text a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -259,9 +265,135 @@ span {
   margin: 30px 0;
 }
 
-.second .icons .icon p {
+.second .icons .icon p,
+.third-text p,
+.row-text-right p {
   color: #989898;
   line-height: 1.6;
+}
+
+/*.. 3  */
+
+.third {
+  background-color: #fafafa;
+}
+
+.third-img {
+  width: 50%;
+  position: relative;
+}
+
+.third-text {
+  width: 50%;
+  padding: 0 150px 0 0;
+}
+
+.third-img {
+  height: 100%;
+}
+
+.img-back {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  background-image: url(img/busy-architect-PYVKWM4-1024x872.jpg);
+  top: 50%;
+  transform: translateY(-50%);
+  background-position-y: 40%;
+  background-position-x: 20%;
+  border-radius: 0 20px 0 0;
+}
+
+.img-overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(269deg, #02d9a3d8 0%, #90e062c7 100%);
+  border-radius: 0 20px 0 0;
+  position: relative;
+  box-shadow: 0 3px 35px 0 rgba(0, 0, 0, 0.267);
+}
+
+.img-split-top {
+  margin-top: 30px;
+  height: 200px;
+  width: 600px;
+  position: absolute;
+  background-image: url(img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg);
+  background-position-y: 20%;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  top: 200px;
+  left: 20%;
+  transform: translateY(-50%);
+  border-radius: 0 20px 0 0;
+  box-shadow: 0 3px 35px 0 rgba(0, 0, 0, 0.288);
+}
+
+.img-split-bottom {
+  margin-top: 30px;
+  height: 200px;
+  width: 600px;
+  position: absolute;
+  background-image: url(img/businesswoman-analysing-document-P8WSNMC-1024x820.jpg);
+  background-position-y: 90%;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  top: 400px;
+  left: 15%;
+  transform: translateY(-50%);
+  border-radius: 0 0 0 20px;
+  box-shadow: 0 3px 35px 0 rgba(0, 0, 0, 0.262);
+}
+
+/*.. 4  */
+
+.four {
+  flex-wrap: wrap;
+}
+
+.row-text {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  align-self: start;
+}
+
+.row-text .divider {
+  margin: 0;
+}
+
+.row-text .divider:first-child {
+  margin-bottom: 30px;
+}
+
+.row-text .divider:last-child {
+  margin-top: 30px;
+}
+
+.row-text-left {
+  font-size: 2.3em;
+  padding: 30px;
+  width: 43%;
+}
+
+.row-text-right {
+  width: 57%;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.row-gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-gallery img {
+  width: calc(25% - 6px);
+  margin: 3px;
 }
 
 /*! FOOTER  */
