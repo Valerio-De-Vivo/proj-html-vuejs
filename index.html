@@ -62,7 +62,7 @@
                 </nav>
 
                 <div class="cta">
-                    <a class="btn green" href="">Purchase</a>
+                    <a class="btn green" href=""> Purchase</a>
                     <i class="fas fa-search"></i>
                 </div>
 
@@ -72,7 +72,7 @@
     </header>
 
     <!--. JUMBO  -->
-    <section class="jumbo">
+    <section id="jumbo" class="jumbo">
 
         <!-- JUMBO TEXT  -->
         <div class="jumbo-text">
@@ -93,15 +93,14 @@
 
             <!-- NUM SLIDER  -->
             <div class="num-slider">
-                <div class="one active"> 01 </div>
-                <div class="two m10"> 02 </div>
-                <div class="three"> 03 </div>
+                <div v-for="(e,index) in img" :class="(index == count) ? 'active' : ''"  @click="slider(index)" > {{'0' + (index + 1) }} </div>
+                
             </div>
         </div>
 
         <!--JUMBO IMG  -->
         <div class="jumbo-img">
-            <img src="css/img/1.png" alt="">
+            <img :src=" 'css/img/' + img[count] " alt="">
         </div>
 
         
@@ -309,6 +308,14 @@
                 <img src="css/img/client-4-2x.png" alt="">
             </div>
         </div>
+    </div>
+
+    <!--. SEARCH BAR  -->
+
+    <div  class="search-bar">
+        <i class="fas fa-times"></i>
+
+        <input type="text" placeholder="Ricerca per parola chiave...">
     </div>
 
     <footer>

@@ -26,8 +26,8 @@ span {
 .btn {
   padding: 18px 45px;
   background-color: transparent;
-
   border-radius: 100em;
+  position: relative;
 }
 
 .green {
@@ -36,10 +36,20 @@ span {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
 }
 
-.black {
+.btn.green:hover {
   background-image: linear-gradient(271deg, #1b1b1b 0%, #424242 100%);
   box-shadow: 6px 6px 25px 0 rgba(0, 0, 0, 0.35);
   text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.black {
+  background-image: linear-gradient(271deg, #1b1b1b 0%, #424242 100%);
+  box-shadow: 6px 6px 25px 0 rgba(0, 0, 0, 0.35);
+}
+
+.btn.black:hover {
+  background-image: linear-gradient(269deg, #02d9a5 0%, #91e062 100%);
+  box-shadow: 6px 6px 25px 0 rgba(0, 217, 166, 0.35);
 }
 
 /*! HEADER  */
@@ -196,6 +206,7 @@ span {
   background-image: linear-gradient(271deg, #1b1b1b 0%, #424242 100%);
   color: white;
   border-radius: 100em;
+  z-index: 5;
 }
 
 .num-slider div {
@@ -203,6 +214,7 @@ span {
   border-radius: 100em;
   font-size: 1.3em;
   color: #989898;
+  cursor: pointer;
 }
 
 .num-slider div.active {
@@ -574,18 +586,18 @@ span {
   text-align: center;
 }
 
-.cta p {
+.seven .cta p {
   color: #e1e1e1;
   font-size: 1.2rem;
 }
 
-.cta h2 {
+.seven .cta h2 {
   color: white;
   font-size: 3em;
   padding: 10px 0;
 }
 
-.cta .input {
+.seven .cta .input {
   width: 60%;
   padding: 18px;
   background-color: #3f3f3f;
@@ -598,7 +610,7 @@ span {
   margin-top: 50px;
 }
 
-.cta input {
+.seven .cta input {
   flex-grow: 2;
   background-color: transparent;
   border: none;
@@ -607,19 +619,19 @@ span {
   color: #adadad;
 }
 
-.cta input:hover,
-.cta input:focus {
+.seven .cta input:hover,
+.seven .cta input:focus {
   outline: 0;
 }
 
-.cta button {
+.seven .cta button {
   background-color: transparent;
   border: none;
   color: #adadad;
   text-transform: uppercase;
 }
 
-.cta a {
+.seven .cta a {
   margin-top: 50px;
   display: inline-block;
 }
@@ -712,4 +724,46 @@ footer a {
 
 .socked i {
   margin: 0 5px;
+}
+
+.search-bar {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.884);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+
+.search-bar input {
+  position: absolute;
+  width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  padding: 20px 40px;
+  border-radius: 50px;
+  background-color: transparent;
+  color: white;
+  border: 3px solid lightgray;
+}
+
+.search-bar input:hover,
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-bar i {
+  font-size: 3em;
+  color: white;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+
+.display {
+  display: block;
 }
