@@ -285,6 +285,15 @@ span {
   color: #989898;
   line-height: 1.6;
 }
+.second .icons .icon:hover {
+  background-image: linear-gradient(269deg, #02d9a5 0%, #91e062 100%);
+  color: white;
+}
+
+.second .icons .icon:hover i,
+.second .icons .icon:hover p {
+  color: white;
+}
 
 /*.. 3  */
 
