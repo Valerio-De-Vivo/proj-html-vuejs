@@ -1,5 +1,9 @@
 /*! GENERAL  */
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -133,6 +137,7 @@ header {
 
 .cta i {
   color: #02d9a5;
+  cursor: pointer;
 }
 
 /*! JUMBO  */
