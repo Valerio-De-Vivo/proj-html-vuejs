@@ -22,7 +22,7 @@
     <!-- HEADER  -->
     <header>
         <!--. TOP HEADER  -->
-        <div class="top-header">
+        <div id="top" class="top-header">
 
             <div class="container-header">
                 <div class="phone">
@@ -320,6 +320,14 @@
 
         <input type="text" placeholder="Ricerca per parola chiave...">
     </div>
+
+    <!--. SCROLL TO TOP  -->
+
+    <div @click="scrollToTop" class="scroll-top">
+        <a href="#top"><i class="fas fa-sort-up"></i></a>
+    </div>
+
+    <!--. FOOTER  -->
 
     <footer>
         <div class="phlox">
