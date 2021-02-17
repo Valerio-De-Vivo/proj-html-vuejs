@@ -100,7 +100,7 @@ gsap.from(".client", {
         start: "top 200px",
         end:"bottom center"
     },
-    xPercent:400,
+    xPercent:600,
     duration:.6,
     stagger: .2
 });

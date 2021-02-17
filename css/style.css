@@ -54,6 +54,10 @@ span {
 
 /*! HEADER  */
 
+header {
+  display: unset;
+}
+
 .top-header {
   height: 30px;
   background-color: #3b3b3b;
@@ -82,6 +86,11 @@ span {
 
 .main-header {
   height: 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .main-header nav ul {
@@ -90,13 +99,29 @@ span {
 
 .main-header nav li {
   list-style: none;
-  padding: 0 20px;
+  padding: 0 10px;
+  margin: 0 10px;
   text-transform: uppercase;
 }
 
 .main-header nav a {
   text-decoration: none;
   color: #3d3d3d;
+}
+
+.main-header nav li::after {
+  display: block;
+  margin-top: 2px;
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(269deg, #02d9a5 0%, #91e062 100%);
+  content: "";
+  transform: scale(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.main-header nav li:hover::after {
+  transform: scale(1);
 }
 
 .cta a {
